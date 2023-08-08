@@ -1,0 +1,17 @@
+<header>
+    <nav>
+      <img src="assets/images/logo_J_D.png" alt="logo">
+
+      <ul>
+            <li *ngFor="let link of links;let i = index">
+                <a (click)="toggleShowLink(i)"
+                    routerLink="{{link.url}}">{{link.title}}</a>
+                <ul *ngFor="let linkChildren of link.children" class="sousList">
+                    <li *ngIf="link.isVisible">
+                        <a routerLink="{{linkChildren.url}}">{{linkChildren.title}}</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>

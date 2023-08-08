@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/2549b07691.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="menu" id="menu">
+        <div class="menu-icon-container">
+            <a id="menuButton"><i class="fa-solid fa-bars fa-2x" id="hamburger"></i></a>
+
+        </div>
+        <div class="menu-content">
+            <img src="img/pp.png" alt="pp" class="pp-img">
+            <h2>Druet Jonathan</h2>
+            <div class="content-container">
+                <ul>
+                    <li><a href="#welcome">Home</a>
+                    </li>
+
+                    <li><a href="#aboutMe">Test</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <section id="welcome">
+            <div>
+                <h1>Welcome</h1>
+                <p>My name is</p>
+                <p class="strong animationAppartition">Jonathan Druet</p>
+                <!--<p>I'm a</p>-->
+                <p class="strong blinkAfter animationAppartition">Futur Java / Angular Developper</p>
+                <div id="divFleche">
+                    <a href="#aboutMe">
+                        <div id="flecheGauche"></div>
+                        <div id="flecheDroite"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="aboutMe">
+            <div class="containerBoxMac">
+                <div id="containerBoxMacHeader">
+                    <span id="redCircle"></span>
+                    <span id="orangeCircle"></span>
+                    <span id="greenCircle"></span>
+                </div>
+                <div class="containerBoxMacContent">
+                    <img src="img/pp.png" alt="pp" class="pp-img">
+
+                    <div class="directContent">
+                        <div>
+                            <p class="strong">Name: </p>
+                            <p>Druet</p>
+                        </div>
+                        <div>
+                            <p class="strong">Firstname: </p>
+                            <p>Jonathan</p>
+                        </div>
+                        <div>
+                            <p class="strong">Age: </p>
+                            <p>22 years old</p>
+                        </div>
+                        <div>
+                            <p class="strong">Localisation: </p>
+                            <p>Belgium, Chênée</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="content">Owner of a CESS in computer science and have accumulated 2 years of Bachelor of
+                    computer science . I
+                    have decided to
+                    undertake a qualifying training as a future Java/Angular developer.</p>
+                <p class="content">
+
+                    I am passionate about the field and world of computer science, and seeking personal development and
+                    skills in this field
+                    to make my professional career there.
+                </p>
+                <button> Click for discover more
+                </button>
+            </div>
+        </section>
+    </div>
+    <script>
+        document.getElementById("menuButton").addEventListener("click", () => document.getElementById("menu").classList.toggle("open"));
+    </script>
+</body>
+
+
+</html>

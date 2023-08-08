@@ -1,0 +1,58 @@
+@import "src/app/shared/shared.style.scss";
+section{
+  article{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    position: relative;
+    user-select: none;
+    div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 250px;
+      }
+      h1{
+        text-align: center;
+        font-family: $title-font;
+        font-weight: bolder;
+        letter-spacing: 0.25rem;
+        font-size: 2.25rem;
+        color: $base-color;
+      }
+      .citation{
+        padding: 1rem;
+        font-style: italic;
+        font-family: "Berlin Sans FB",sans-serif;
+        letter-spacing: 3px;
+        &::after,&::before{
+          content: ' " ';
+        }
+      }
+      #downArrow a{
+        font-size: 4.5rem;
+        align-self: flex-end;
+        color: $second-color;
+        animation: blink 2s infinite;
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+
+@keyframes blink {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
